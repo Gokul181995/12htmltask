@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Event-Update-Page</title>
+        <link rel="icon" href="./favicon_io/android-chrome-192x192.png">
+        <link rel="stylesheet" href="style.css">
+        <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            
+        }
+
+        .event-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .content-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            border-color: black;
+            border-width: 5px;
+            border-style: solid;
+            
+
+        }
+
+        img {
+            max-width: 50%;
+        }
+
+        form {
+            max-width: 50%;
+            text-align: 60%;
+            
+
+
+        }
+      
+    </style>
+    </head>
+    <body>
+
+        <div class="event-info">
+            <h1>Event 1</h1>
+            <h4>Number of available Seats: 23</h4>
+        </div>
+
+        <div class="content-box">
+            <img src="Event img.jpg" alt="Event Image ">
+
+            <form>
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Phone No:</td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Number of Seats:</td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Name of Attendee 2:</td>
+                        <td><input type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit">
+                            <button type="button"
+                                onclick="cancelFunction()">Cancel</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <script>
+        function cancelFunction() {
+            // Add any cancel logic or actions here
+            alert('Form canceled!');
+        }
+    </script>
+
+    </body>
+</html>
